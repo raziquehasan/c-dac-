@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    table {
+      border: 2px solid black;
+      border-collapse: collapse;
+      margin-top: 50px;
+      margin-bottom: 200px;
+      width: 100%;
+    }
+
+
+    table, td, th {
+      border: 2px solid black;
+      padding: 5px;
+    }
+    tr {
+      height: 40px;
+    }
+    input[type="radio"] {
+      margin-left: 10px;
+    }
+    caption {
+  font-size: 24px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+  </style>
+</head>
+<body>
+
+  <table>
+    <caption><strong>Employee Registration Form</strong></caption>
+
+    <tr>
+      <td>Name</td>
+      <td></td>
+      <td>Gender</td>
+      <td></td>
+      <td>Date of Birth</td>
+      <td></td>
+      <td rowspan="4" style="text-align:center;">Photo</td>
+    </tr>
+
+    <tr>
+      <td>Birthplace</td>
+      <td></td>
+      <td>Political Status</td>
+      <td></td>
+      <td>Marital Status</td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td>Education</td>
+      <td></td>
+      <td>Major</td>
+      <td></td>
+      <td>Job Title</td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td>Height</td>
+      <td></td>
+      <td>ID Number</td>
+      <td colspan="3"></td>
+    </tr>
+
+    <tr>
+      <td>Graduated School</td>
+      <td colspan="3"></td>
+      <td>Graduation Time</td>
+      <td colspan="2"></td>
+    </tr>
+
+    <tr>
+      <td>Contact Number</td>
+      <td colspan="6"></td>
+    </tr>
+
+    <tr>
+      <td colspan="2">Address</td>
+      <td colspan="5"></td>
+    </tr>
+
+    <tr>
+      <td>Emergency Contact Number</td>
+      <td>Name</td>
+      <td></td>
+      <td>Relationship</td>
+      <td></td>
+      <td>Tel</td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td>Telephone Number</td>
+      <td colspan="6"></td>
+    </tr>
+
+    <tr>
+      <td rowspan="4">Skills</td>
+      <td>Language Skills</td>
+      <td></td>
+      <td colspan="3">Driving License</td>
+      <td>Computer Skills</td>
+    </tr>
+
+    <tr>
+      <td colspan="2">Other Languages</td>
+      <td colspan="3">
+        Type:
+        <input type="radio" name="licenseType" id="licenseA">
+        <label for="licenseA">A</label>
+        <input type="radio" name="licenseType" id="licenseB">
+        <label for="licenseB">B</label>
+        <input type="radio" name="licenseType" id="licenseC">
+        <label for="licenseC">C</label>
+        <input type="radio" name="licenseType" id="licenseD">
+        <label for="licenseD">D</label>
+      </td>
+      <td rowspan="2"></td>
+    </tr>
+
+    <tr>
+      <td>Skill Level</td>
+      <td></td>
+      <td>Date of Initial Certification</td>
+      <td colspan="2"></td>
+    </tr>
+
+    <tr>
+      <td>Other Skills</td>
+      <td colspan="5"></td>
+    </tr>
+
+    <tr>
+      <td rowspan="4">Family Member</td>
+      <td>Name</td>
+      <td>Relationship</td>
+      <td colspan="3">Unit and Position</td>
+      <td>Contact Number</td>
+    </tr>
+
+    <tr>
+      <td></td>
+      <td></td>
+      <td colspan="3"></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td></td>
+      <td></td>
+      <td colspan="3"></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td></td>
+      <td></td>
+      <td colspan="3"></td>
+      <td></td>
+    </tr>
+
+  </table>
+
+</body>
+</html>
