@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BSPGCL Dashboard</title>
+    <style>
+        body {
+            background-color: #111;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #1a1a4d;
+            color: white;
+            width: 500px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px #000;
+            text-align: center;
+            padding: 20px;
+        }
+        .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+        h2 {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+        .button-row {
+            margin-top: 20px;
+        }
+        .button-row button {
+            background-color: #e6e6e6;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .menu-button {
+            display: block;
+            width: 90%;
+            margin: 10px auto;
+            padding: 12px;
+            background-color: #00004d;
+            color: white;
+            border: 2px solid white;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .footer {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+        .footer button {
+            padding: 8px 12px;
+            border: none;
+            background-color: #e6e6e6;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="Wikimedia-logo.png" alt="Logo" class="logo">
+    <h2>BIHAR STATE POWER GENERATION COMPANY LIMITED</h2>
+
+    <div class="button-row">
+        <button>Entry Form</button>
+        <button>Service Form</button>
+    </div>
+
+    <button class="menu-button">New Customer Entry</button>
+    <button class="menu-button">Create Bill</button>
+    <button class="menu-button">Issue Meter</button>
+    <button class="menu-button">New Connection Type Entry</button>
+    <button class="menu-button">Make Payment</button>
+
+    <div class="footer">
+        <button>Log Out</button>
+        <button>Change Password</button>
+    </div>
+</div>
+
+</body>
+</html>
