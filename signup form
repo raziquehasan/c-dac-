@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #8A2BE2;
+            background: linear-gradient(135deg, #a450e5, #6b22b5);
+        }
+
+        .signup-container {
+            background-color: white;
+            width: 420px;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .signup-container h1 {
+            font-size: 2.2em;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .input-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .input-group .icon {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            background: linear-gradient(135deg, #b875f0, #8840d8);
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.9em;
+        }
+
+        .input-field {
+            width: 100%;
+            height: 50px;
+            padding: 0 20px 0 55px;
+            border-radius: 25px;
+            border: 1px solid #e0e0e0;
+            background-color: #f9f9ff;
+            font-size: 1em;
+            color: #555;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.02);
+            transition: border-color 0.3s;
+        }
+
+        .input-field::placeholder {
+            color: #aaa;
+        }
+
+        .input-field:focus {
+            outline: none;
+            border-color: #8A2BE2;
+        }
+
+        .input-group .eye-icon {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #aaa;
+            cursor: pointer;
+        }
+
+        .input-group .eye-icon:hover {
+            color: #8A2BE2;
+        }
+
+        .terms {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        .terms input[type="checkbox"] {
+            margin-right: 10px;
+            accent-color: #8A2BE2;
+            width: 15px;
+            height: 15px;
+        }
+
+        .terms a {
+            color: #6b22b5;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .terms a:hover {
+            text-decoration: underline;
+        }
+
+        .create-btn {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 25px;
+            background: linear-gradient(to right, #a450e5, #6b22b5);
+            color: white;
+            font-size: 1.1em;
+            font-weight: 600;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin-bottom: 20px;
+        }
+
+        .create-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 15px rgba(138, 43, 226, 0.3);
+        }
+
+        .signin-link {
+            color: #777;
+            font-size: 0.9em;
+        }
+
+        .signin-link a {
+            color: #333;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .signin-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="signup-container">
+        <h1>Sign Up</h1>
+
+        <form>
+            <div class="input-group">
+                <span class="icon"><i class="fas fa-user"></i></span>
+                <input type="text" class="input-field" placeholder="Name">
+            </div>
+
+            <div class="input-group">
+                <span class="icon"><i class="fas fa-envelope"></i></span>
+                <input type="email" class="input-field" placeholder="E-mail">
+            </div>
+
+            <div class="input-group">
+                <span class="icon"><i class="fas fa-lock"></i></span>
+                <input type="password" class="input-field" placeholder="Password">
+                <span class="eye-icon"><i class="fas fa-eye"></i></span>
+            </div>
+
+            <div class="terms">
+                <input type="checkbox" id="terms-agree" checked>
+                <label for="terms-agree">I read and agree to <a href="#">Terms & Conditions</a></label>
+            </div>
+
+            <button type="submit" class="create-btn">Create Account</button>
+
+            <p class="signin-link">
+                Already have an account? <a href="#">Sign in</a>
+            </p>
+        </form>
+    </div>
+
+</body>
+</html>
