@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <style>
+            div{
+                border:2px solid black;
+            }
+            #d1{
+                width:71.3%;
+                height:230px;
+            }
+            #d2{
+                width:35%;
+                height:150px;
+                position: relative;
+                top: 10px;
+            }
+            #d3{
+                width:35%;
+                height:170px;
+                position: relative;
+                top: -145px;
+                left:450px;
+            }
+            /* table,td,th{
+                border:2px solid red;
+                border-collapse: collapse;
+            } */
+             th{
+                text-align: left;
+                width:200px;
+                padding-left: 30px;
+             }
+             input{
+                width:240px;
+             }
+        </style>
+    </head>
+    <body>
+        <div id="d1">
+            <table>
+                <caption style="margin-bottom:30px;">Consumer Details</caption>
+                <tr>
+                    <th>Bill Id</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Consumer Id</th>
+                    <td><input type="text"></td>
+                    <th>Meter Number</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Customer Name</th>
+                    <td><input type="text"></td>
+                    <th>Mobile Number</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Customer Address</th>
+                    <td colspan="3"><input type="text" style="width:100%;"></td>
+                </tr>
+                <tr>
+                    <th>Area Type</th>
+                    <td><input type="text"></td>
+                    <th>Bill Date</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Connection Type</th>
+                    <td><input type="text"></td>
+                    <th>Billed Days</th>
+                    <td><input type="text"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="d2">
+            <table>
+                <caption style="margin-bottom:30px;">Reading Details</caption>
+                <tr>
+                    <th>Privious Reading</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Current Reading</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Consumption</th>
+                    <td><input type="text"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="d3">
+             <table>
+                <caption style="margin-bottom:30px;">Arrear Details</caption>
+                <tr>
+                    <th>Payment On Account</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Energy Dues</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Arrears DPS</th>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <th>Sub Total (A)</th>
+                    <td><input type="text"></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
