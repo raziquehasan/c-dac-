@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <style>
+            input[type="text"]{
+                position: absolute;
+                left:150px;
+            }
+            input[type="button"]
+            {
+                width:60px;
+                height:30px;
+                border-radius: 5px;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <fieldset style="width:25%;">
+                Enter first no: <input type="text" id="t1"> <br><br>
+                Enter second no: <input type="text" id="t2"> <br><br>
+                <input type="button" value="ADD" style="background-color:green;" onclick="disp(1)">
+                <input type="button" value="SUB" style="background-color: blue;" onclick="disp(2)">
+                <input type="button" value="MUL" style="background-color: rebeccapurple" onclick="disp(3)">
+                <input type="button" value="DIV" style="background-color:red;" onclick="disp(4)"> <br><br>
+                <h2 id="res"></h2>
+            </fieldset>
+        </form>
+        <script>
+            function disp(p)
+            {
+                a=parseFloat(document.getElementById('t1').value);
+                b=parseFloat(document.getElementById('t2').value);
+                if(p==1)
+                    document.getElementById('res').innerHTML="sum of a and b="+(a+b);
+                else if(p==2)
+                    document.getElementById('res').innerHTML="Difference of a and b="+(a-b);
+                else if(p==3)
+                    document.getElementById('res').innerHTML="multiplication of a and b="+a*b;
+                else
+                    document.getElementById('res').innerHTML="Result="+a/b;
+            }
+        </script>
+    </body>
+</html>
